@@ -4,7 +4,7 @@ export default class PokemonService {
     getResources = async (url) => {
         const response = await fetch(`${this._baseUrl}${url}`);
         if (!response.ok) {
-            throw new Error('Error in request: ', response);
+            throw new Error('Error in request');
         }
 
         const body = await response.json();
