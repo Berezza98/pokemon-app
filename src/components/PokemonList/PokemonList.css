@@ -1,0 +1,25 @@
+.pokemon-list-wrapper {
+    background: yellow;
+}
+
+.pokemon-list {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.pokemon-list > li {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pokemon-list > li:hover {
+    color: white;
+    font-weight: bold;
+    background: aquamarine;
+    cursor: pointer;
+}

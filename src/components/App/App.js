@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
 
+import Header from '../Header';
+import RandomPokemon from '../RandomPokemon';
+import PokemonList from '../PokemonList';
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <Header />
+      <RandomPokemon />
+      <PokemonList />
     </div>
   );
 }

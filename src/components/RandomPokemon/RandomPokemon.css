@@ -1,0 +1,8 @@
+.random-pokemon-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+    min-height: 100px;
+}
