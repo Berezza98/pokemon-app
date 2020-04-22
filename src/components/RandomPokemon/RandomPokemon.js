@@ -13,8 +13,7 @@ export default class RandomPokemon extends Component {
         error: false
     }
 
-    constructor() {
-        super();
+    componentDidMount() {
         this.updatePokemon();
     }
 
@@ -24,7 +23,7 @@ export default class RandomPokemon extends Component {
             this.setState((state) => {
                 return {
                     ...state,
-                    ...result,
+                    pokemon: result,
                     loading: false
                 };
             });

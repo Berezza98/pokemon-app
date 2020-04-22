@@ -11,8 +11,7 @@ export default class PokemonList extends Component {
         pokemons: []
     };
 
-    constructor() {
-        super();
+    componentDidMount() {
         this.updatePokemonList();
     }
 
@@ -26,13 +25,17 @@ export default class PokemonList extends Component {
         });
     }
 
+    selectPokemon = (name) => {
+        this.props.changeSelectedPokemon(name);
+    }
+
     render() {
         const { next, prev, pokemons } = this.state;
         return (
-            <div className="pokemon-list-wrapper">
+            <div>
                 <ul className="pokemon-list">
                     {
-                        pokemons.map(pokemon => <li key={pokemon.name}>{ pokemon.name }</li>)
+                        pokemons.map(pokemon => <li onClick={() => this.selectPokemon(pokemon.name)} key={pokemon.name}>{ pokemon.name }</li>)
                     }
                 </ul>
                 <div className="pagination">

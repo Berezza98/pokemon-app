@@ -1,0 +1,17 @@
+.pokemons-page {
+
+}
+
+.pokemon-wrapper {
+    display: flex;
+}
+
+.pokemon-list-wrapper {
+    width: 50%;
+    background: yellow;
+}
+
+.selected-pokemon-wrapper {
+    width: 50%;
+    background: blueviolet;
+}

@@ -23,10 +23,8 @@ export default class PokemonService {
     getPokemon = async (id = Math.floor(Math.random() * 100) + 1) => {
         const { name, sprites: { front_default } } = await this.getResources(`/pokemon/${id}`);
         return {
-            pokemon: {
-                name,
-                imageUrl: front_default
-            }
+            name,
+            imageUrl: front_default
         };
     }
 }
